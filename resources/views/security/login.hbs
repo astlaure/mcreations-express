@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="centered margin-top-2 margin-bottom-2">LOGIN</h1>
+  <div class="row centered">
+    <div class="col span-tablet-6">
+      <div class="card">
+        <form action="/" method="POST">
+          <input type="hidden" name="csrf" value="{{ csrf }}">
+          <label for="username" class="form-element">
+            Username
+            <input type="text" name="username" id="username">
+          </label>
+          <label for="password" class="form-element">
+            Password
+            <input type="password" name="password" id="password">
+          </label>
+          <input type="submit" class="btn btn-primary width-100" value="LOGIN">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

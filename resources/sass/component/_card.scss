@@ -1,0 +1,21 @@
+.card {
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0 2px 2px 0 #E5E5E5;
+
+  .card-image {
+    width: 100%;
+  }
+
+  .card-footer {
+    display: flex;
+    margin-top: 1rem;
+
+    & > * {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+  }
+}

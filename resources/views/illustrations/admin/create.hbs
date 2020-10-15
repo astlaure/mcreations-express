@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="centered margin-top-2 margin-bottom-2">ADMIN ILLUSTRATIONS</h1>
+  <div class="row centered">
+    <div class="col span-tablet-6">
+      <div class="card">
+        <form action="/illustrations/create" method="post" enctype="multipart/form-data">
+          <input type="hidden" name="csrf" value="{{ csrf }}">
+          <label for="photo" class="form-element">
+            Illustrations
+            <input type="file" name="photo" id="photo">
+          </label>
+          <label for="nsfw" class="form-element check">
+            <input type="checkbox" name="nsfw" id="nsfw">
+            is Nsfw ?
+          </label>
+          <input type="submit" class="btn" value="submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
